@@ -1,0 +1,143 @@
+
+body {
+
+background-color: rgb(29, 146, 241);
+font-family: "Bitcount Grid Single", system-ui;
+
+}
+
+
+.navbar {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px ;
+}
+
+.logo {
+
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: "Bitcount Grid Single", system-ui;
+    color: rgb(19, 19, 255);
+    text-decoration: none;
+  
+}
+.logo a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ 
+
+
+.logo:hover {
+    color: orange;
+
+}
+
+.enlaces {
+
+    list-style: none;
+    font-size: larger;
+}
+
+.enlaces a {
+
+    font-family:"Bitcount Grid Single", system-ui; 
+    text-decoration: none;
+    color: rgb(13, 13, 255);
+    
+}
+
+.enlaces a:visited {
+  color: rgb(13, 13, 255);
+  text-decoration: none;
+}
+
+
+.enlaces a:hover {
+
+color: orange;
+}
+
+video {
+  display: block;
+  margin: 30px auto;
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.menu {
+
+  color: orange;
+}
+
+.menu h1 {
+
+  display: flex;
+  justify-content: center;
+}
+
+.menu h1:hover {
+  color: #c49a6c; 
+  transition: color 0.3s ease; 
+}
+
+.menu h2 {
+
+  margin: 20px;
+
+}
+
+.menu h2:hover {
+  color: #c49a6c; 
+  transition: color 0.3s ease; }
+
+.contacto {
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  text-align: center;
+  gap: 10px;
+  margin: 100px auto; 
+  width: fit-content;
+}
+
+
+.contacto h2 {
+color:rgb(13, 13, 255) ;
+
+}
+
+.contacto h2:hover {
+  color: #df820a; 
+  transition: color 0.3s ease; }
+
+.contacto textarea {
+  width: 100%;
+  height: 120px;
+  padding: 20px;
+  font-family: inherit;
+  font-size: 14px;
+  display: block;
+  justify-content: center;
+  
+  
+}
+
+.contacto button {
+  background: #0a77dd;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.contacto button:hover {
+  background: #35bacc;
+}
