@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video de fondo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+TAS:wght@100..400&display=swap" rel="stylesheet">
+<style>
+
+  body, html {
+    margin: 0;
+    height: 100%;
+    overflow-y: auto; /* permite scroll */
+    font-family: "Playwrite AU TAS", cursive;
+  }
+
+  .video-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background: rgba(0,0,0,0.6);
+    position: relative;
+    z-index: 10;
+  }
+
+  .logo a {
+    color: rgb(247, 20, 20);
+    text-decoration: none;
+    font-size: 1.8rem;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-links li a {
+    color: rgb(235, 19, 19);
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+
+  .content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; 
+    padding: 50px;
+    color: rgb(211, 189, 189);
+  }
+
+  .side-image {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .text-container p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: left;
+  }
+
+  /* RESPONSIVE: imagen arriba y texto abajo en móviles/tablets */
+  @media (max-width: 768px) {
+    .content-wrapper {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .side-image {
+      width: 200px; /* ajusta tamaño en móviles */
+    }
+
+    .text-container p {
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .side-image {
+      width: 150px;
+    }
+
+    .text-container p {
+      font-size: 1rem;
+    }
+  }
+
+</style>
+</head>
+<body>
+
+<nav class="main-nav">
+  <div class="logo"><a href="index.html">Gauchito Gil</a></div>
+  <ul class="nav-links">
+    <li><a href="sobreestesitio.html">Sobre este sitio</a></li>
+    <li><a href="https://es.wikipedia.org/wiki/Gauchito_Gil" target="_blank">Historia</a></li>
+  </ul>
+</nav>
+
+<video class="video-bg" autoplay muted loop>
+  <source src="3987662-hd_1920_1080_24fps.mp4" type="video/mp4">
+  Tu navegador no soporta video.
+</video>
+
+<div class="content-wrapper">
+  <div class="image-container">
+    <img src="gauchito2.jpeg" alt="Gauchito Gil" class="side-image">
+  </div>
+  <div class="text-container">
+    <p>
+      Este espacio está dedicado a todos aquellos que quieren acercarse al Gauchito Gil con plegarias, pedidos y agradecimientos. Aquí podrás expresar tus oraciones de manera personal y sincera, compartir tus intenciones y sentir la compañía espiritual del santo que acompaña y protege a quienes creen en él.<br><br>
+      Todas las palabras que escribas serán <strong>completamente privadas</strong>: solo tú podrás leer lo que has escrito, asegurando un lugar seguro y personal para tus plegarias y agradecimientos.<br><br>
+      Además, si lo deseas, puedes colaborar con el mantenimiento del sitio o hacer una ofrenda al Gauchito Gil como muestra de tu fe y gratitud. Todo aquí se realiza con respeto y buenas intenciones, buscando que cada visitante encuentre un lugar de paz, esperanza y conexión espiritual.
+    </p>
+  </div>
+</div>
+
+</body>
+</html>
