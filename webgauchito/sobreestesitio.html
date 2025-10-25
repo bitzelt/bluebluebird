@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video de fondo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+TAS:wght@100..400&display=swap" rel="stylesheet">
+<style>
+
+  .content h1 {
+    margin-bottom: 0;
+  }
+
+  .content p {
+    margin-top: 0;
+  }
+  body, html {
+  margin: 0;
+  height: 100%;
+  overflow-y: auto; /* permite scroll */
+}
+
+  
+
+  .video-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* cubre toda la pantalla sin deformar */
+    z-index: -1;       /* envía el video al fondo */
+  }
+
+  .content {
+    
+    color: rgb(230, 16, 16);
+    text-align: center;
+    
+    font-size: 2rem;
+    font-family: "Playwrite AU TAS", cursive;
+  }
+
+  .main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background: rgba(0,0,0,0.6);
+  position: relative;
+  z-index: 10;
+}
+
+.logo {
+  color: rgb(247, 20, 20);
+  font-size: 1.8rem;
+  font-family: 'Playwrite AU TAS', cursive;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  color: rgb(235, 19, 19);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: 'Playwrite AU TAS', cursive;
+}
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px; /* espacio entre imagen y texto */
+  padding: 50px;
+  color: rgb(211, 189, 189);
+  font-family: "Playwrite AU TAS", cursive;
+}
+
+.side-image {
+  width: 300px; /* ajusta según necesites */
+  height: auto;
+  border-radius: 10px;
+}
+
+.text-container p {
+  font-size: 1.2rem; /* más pequeño que el original */
+  line-height: 1.6;
+  text-align: left;
+}
+/* Estilos para el logo como enlace */
+.logo a {
+  color: rgb(247, 20, 20); /* rojo */
+  text-decoration: none;    /* quita subrayado */
+}
+
+/* Mantener el mismo estilo en todos los estados */
+.logo a:link,
+.logo a:visited,
+.logo a:hover,
+.logo a:active {
+  color: rgb(247, 20, 20);
+  text-decoration: none;
+}
+
+</style>
+</head>
+<body>
+  <nav class="main-nav">
+  <div class="logo"><a href="index.html">Gauchito Gil</a></div>
+  <ul class="nav-links">
+    <li><a href="sobreestesitio.html">Sobre este sitio</a></li>
+    <li><a href="https://es.wikipedia.org/wiki/Gauchito_Gil" target="_blank">Historia</a></li>
+  </ul>
+</nav>
+
+
+<video class="video-bg" autoplay muted loop>
+  <source src="3987662-hd_1920_1080_24fps.mp4" type="video/mp4">
+  Tu navegador no soporta video.
+</video>
+
+<div class="content-wrapper">
+  <div class="image-container">
+    <img src="gauchito2.jpeg" alt="Gauchito Gil" class="side-image">
+  </div>
+  <div class="text-container">
+    <p>
+      Este espacio está dedicado a todos aquellos que quieren acercarse al Gauchito Gil con plegarias, pedidos y agradecimientos. Aquí podrás expresar tus oraciones de manera personal y sincera, compartir tus intenciones y sentir la compañía espiritual del santo que acompaña y protege a quienes creen en él.<br><br>
+      Todas las palabras que escribas serán <strong>completamente privadas</strong>: solo tú podrás leer lo que has escrito, asegurando un lugar seguro y personal para tus plegarias y agradecimientos.<br><br>
+      Además, si lo deseas, puedes colaborar con el mantenimiento del sitio o hacer una ofrenda al Gauchito Gil como muestra de tu fe y gratitud. Todo aquí se realiza con respeto y buenas intenciones, buscando que cada visitante encuentre un lugar de paz, esperanza y conexión espiritual.
+    </p>
+  </div>
+</div>
+
+</body>
+</html>
