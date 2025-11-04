@@ -1,0 +1,232 @@
+
+body {
+
+background-color: rgb(29, 146, 241);
+font-family: "Bitcount Grid Single", system-ui;
+
+}
+
+
+.navbar {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px ;
+}
+
+.logo {
+
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: "Bitcount Grid Single", system-ui;
+    color: rgb(19, 19, 255);
+    text-decoration: none;
+  
+}
+.logo a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ 
+
+
+.logo:hover {
+    color: orange;
+
+}
+
+.enlaces {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  
+}
+
+
+.enlaces a {
+
+    font-family:"Bitcount Grid Single", system-ui; 
+    text-decoration: none;
+    color: rgb(13, 13, 255);
+    
+}
+
+.enlaces a:visited {
+  color: rgb(13, 13, 255);
+  text-decoration: none;
+}
+
+
+.enlaces a:hover {
+
+color: orange;
+}
+
+video {
+  display: block;
+  margin: 30px auto;
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.menu {
+
+  color: orange;
+}
+
+.menu h1 {
+
+  display: flex;
+  justify-content: center;
+}
+
+.menu h1:hover {
+  color: #c49a6c; 
+  transition: color 0.3s ease; 
+}
+
+.menu h2 {
+
+  margin: 20px;
+
+}
+
+.menu h2:hover {
+  color: #c49a6c; 
+  transition: color 0.3s ease; }
+
+.contacto {
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  text-align: center;
+  gap: 10px;
+  margin: 100px auto; 
+  width: fit-content;
+}
+
+
+.contacto h2 {
+color:rgb(13, 13, 255) ;
+
+}
+
+.contacto h2:hover {
+  color: #df820a; 
+  transition: color 0.3s ease; }
+
+.contacto textarea {
+  width: 100%;
+  height: 120px;
+  padding: 20px;
+  font-family: inherit;
+  font-size: 14px;
+  display: block;
+  justify-content: center;
+  
+  
+}
+
+.contacto button {
+  background: #0a77dd;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.contacto button:hover {
+  background: #35bacc;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  margin-top: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+footer .footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+footer .logo a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+footer .redes img {
+  width: 30px;
+  height: 30px;
+  filter: invert(1);
+  transition: transform 0.3s;
+}
+
+footer .redes img:hover {
+  transform: scale(1.2);
+}
+
+/* Móvil */
+@media (max-width: 600px) {
+  footer {
+    font-size: 14px;
+    padding: 15px;
+  }
+
+  footer .footer-content {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+ 
+  /* --- Ajuste final para evitar que el logo y los links toquen los bordes --- */
+.navbar {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px 25px; /* más aire lateral */
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center; /* centra logo y links */
+    padding: 20px;
+  }
+
+  .enlaces {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 0 15px; /* margen interno lateral */
+  }
+
+  .logo {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
